@@ -1,0 +1,149 @@
+.list{
+  height: 100%;
+  width: 420px;
+}
+.list .search{
+  height: 50px;
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+.list .search input{
+  border-radius: 30px;
+  padding: 7px 15px;
+  border: none;
+  width: 380px;
+  height: 40px;
+  background-color: #fff;
+}
+.list .item{
+  z-index: 111;
+  transition: none 0s ease 0s;
+  height: 72px;
+  transform: translateY(0px);
+  width: 100%;
+}
+.list .item > div > div{
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  pointer-events: all;
+  position: relative;
+}
+.list .item .profileContainer{
+  padding: 0 15px 0 13px;
+  margin-top: -1px;
+  flex: none;
+  display: flex;
+  align-items: center;
+}
+.list .item .profile{
+  height: 49px;
+  width: 49px;
+  margin: 0;
+}
+.list .item .text{
+  padding-right: 15px;
+  width: 100%;
+  height: 100%;
+}
+.list .item .description{
+  height: 100%;
+  flex-grow: 1;
+  flex-basis: auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list .item .description .msg span, .list .item .description .name span{
+  align-items: center;
+  line-height: normal;
+  display: flex;
+  text-align: left;
+}
+.list .item .description{
+  padding-right: 15px;
+  border-top: 1px solid #f2f2f2;
+    flex-grow: 1;
+    flex-basis: auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.list .item .description .name{
+  text-align: left;
+  color: #000;
+  display: flex;
+  flex-grow: 1;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 21px;
+  overflow: hidden;
+}
+.list .item .description .name > span{
+  display: inherit;
+  white-space: inherit;
+  text-overflow: inherit;
+  overflow: inherit;
+}
+.list .item .description .top .name span span{
+  display: inline-block;
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  visibility: visible;
+}
+.list .item .description .top .date{
+  margin-top: 3px;
+  margin-left: 6px;
+  line-height: 14px;
+  color: rgba(0,0,0,.32);
+  flex: none;
+  font-size: 12px;
+  line-height: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list .msg{
+  margin-top: 2px;
+  align-items: center;
+  color: var(--secondary);
+  display: flex;
+  font-size: 13px;
+  line-height: 20px;
+  min-height: 20px;
+}
+.list .msg > div{
+  text-align: left;
+  background-color: transparent;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+.list .msg div > span{
+  display: flex;
+  align-items: flex-start;
+}
+.list .msg span span{
+  display: inline-block;
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

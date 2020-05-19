@@ -1,0 +1,11 @@
+header{
+  min-height: 60px;
+  background-color: #ededed;
+  overflow: hidden;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.chat header {
+  border-left: solid 1px #d8d8d8;
+}

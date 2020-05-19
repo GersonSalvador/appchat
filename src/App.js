@@ -1,24 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import List from './components/List';
+import Chat from './components/Chat';
+import './css/App.css';
+import './css/Header.css';
+import './css/List.css';
+import './css/Chat.css';
 
 function App() {
+
+  const [chatStatus, setChatStatus] = useState([]);
+  
+  const chatList = [
+    {
+      name:'Honey',
+      pic: 'pp-2.jpg'
+    }, 
+    {
+      name:'Eliezer Salvador',
+      pic: 'eli.jpg'
+    }, 
+    {
+      name:'Cloves Augusto da Silva',
+      pic: 'cloves.jpg'
+    }, 
+    {
+      name:'Elisa',
+      pic: 'elisa.jpg'
+    }
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="frame">
+        <div className="container">
+          <List list={chatList} setChatStatus={setChatStatus} />
+          <Chat chatStatus={chatStatus} />
+        </div>
+      </div>
     </div>
   );
 }
